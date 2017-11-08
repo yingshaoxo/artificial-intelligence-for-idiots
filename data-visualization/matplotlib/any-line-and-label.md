@@ -7,7 +7,7 @@ def draw_a_line(formula, x_range, label=''):
     y = eval(formula)
     pylab.plot(x, y, '-', label=label)
 
-# draw x^2
+# draw -x^2
 x = np.linspace(-5, 1.5)
 y = np.negative(np.power(x, 2))
 pylab.plot(x, y, '-k', label = r'$y = -x^2$')
