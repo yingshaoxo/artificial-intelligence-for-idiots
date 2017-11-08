@@ -11,6 +11,6 @@ If you asked yourself what is meaningful, you would go through all dimensions, f
 
 
 But there are still a lot of questions beyond our wisdom to solve it. That's the limitation we have for sure. 
-As an individual, we probably will have not much equal rights to get what we want.
+As an individual, we probably will not have much equal rights to get what we want.
 Here comes a light, Artificial Intelligence.   
 
