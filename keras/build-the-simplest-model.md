@@ -1,3 +1,9 @@
+```
+import numpy as np
+import pandas as pd
+```
+___
+
 #### Keras is the simplest ML library, so I hope you enjoy it
 
 ```
@@ -25,4 +31,12 @@ ___
 
 ```
 model.fit(x, y, epochs=100, batch_size=1)
+```
+
+___
+
+#### Then do a prediction
+
+```
+model.predict(np.array([[170, 96]]))
 ```
