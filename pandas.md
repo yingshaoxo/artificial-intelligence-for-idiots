@@ -97,4 +97,28 @@ Here the `axis` means:
 
 ___
 
+#### get a new column based on other exists columns
 
+```
+>>> table = table.drop("another_column", axis=1)
+>>> table
+   column1  column2
+0      1.0      2.0
+1      1.5      3.0
+2      2.0      4.0
+3      2.5      5.0
+
+>>> def greater_than_2(row):
+...     if row['column1'] > 2:
+...         return 'yes'
+...     else:
+...         return 'no'
+... 
+>>> table.apply(lambda row: greater_than_2(row), axis=1)
+0     no
+1     no
+2     no
+3    yes
+dtype: object
+>>> 
+```
