@@ -13,7 +13,7 @@
 ```
 ___
 
-#### For our case, we only need the height and weight about the 500 person
+#### For our case, we only need the `height and weight` as `input`, `gender` as `output`
 
 ```
 >>> x = data_table['Height'].values
