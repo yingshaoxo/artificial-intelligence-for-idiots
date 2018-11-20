@@ -1,4 +1,8 @@
 `Pandas` is a Python tool for handling `tables`, which works like excel, but it's programmable.
+
+```
+import pandas as pd
+```
 ___
 
 Create your first `DataFrame`
@@ -12,5 +16,16 @@ Create your first `DataFrame`
 2  2.0
 3  2.5
 ```
-
 ___
+
+A general pandas `DataFrame`
+
+```
+>>> data = {'column1': numpy_array, 'column2': numpy_array*2}
+>>> pd.DataFrame(data)
+   column1  column2
+0      1.0      2.0
+1      1.5      3.0
+2      2.0      4.0
+3      2.5      5.0
+```
