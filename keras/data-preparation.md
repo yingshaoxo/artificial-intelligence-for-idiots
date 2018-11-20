@@ -31,5 +31,22 @@ array([[174,  96],
 ```
 
 ```
->>> y = data_table['Weight'].values
+>>> def convert_gender_to_number(row):
+...     if row['Gender'] == 'Male':
+...         return 1
+...     else:
+...         return 0
+... 
+>>> y = data_table[['Gender']].apply(lambda row: convert_gender_to_number(row), axis=1)
+>>> y[:10]
+0    1
+1    1
+2    0
+3    0
+4    1
+5    1
+6    1
+7    1
+8    1
+9    0
 ```
