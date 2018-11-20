@@ -1,6 +1,11 @@
-Numpy is a short name for `number of python`
+`Numpy` is a short name of `number of python`
 
-`numpy` is a python library for number processing.
+> `numpy` is a python library for number processing.
+
+
+```
+import numpy as np
+```
 ___
 
 py_list to np_array
