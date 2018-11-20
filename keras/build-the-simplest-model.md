@@ -6,7 +6,7 @@ from keras.layers import Dense
 
 model = Sequential()
 
-model.add(Dense(units=1, activation='relu', input_dim=1))
+model.add(Dense(units=2, activation='relu', input_dim=2))
 model.add(Dense(units=1))
 
 model.compile(
@@ -24,5 +24,5 @@ ___
 #### After that, let us feed data into our model
 
 ```
-
+model.fit(x, y, epochs=100, batch_size=1)
 ```
