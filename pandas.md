@@ -71,21 +71,25 @@ get two columns of your pandas dataframe
 ```
 ___
 
-make some changes for that column
+drop a column in the table
 
 ```
 >>> table
+   column1  column2  another_column
+0      1.0      2.0             3.0
+1      1.5      3.0             4.5
+2      2.0      4.0             6.0
+3      2.5      5.0             7.5
+
+>>> table.drop("another_column", axis=1)
    column1  column2
 0      1.0      2.0
 1      1.5      3.0
 2      2.0      4.0
 3      2.5      5.0
-
->>> table['column1'] = table['column1']*0.5
->>> table
-   column1  column2
-0     0.50      2.0
-1     0.75      3.0
-2     1.00      4.0
-3     1.25      5.0
+>>> 
 ```
+
+Here the `axis` means: 
+> {0 or ‘index’, 1 or ‘columns’}, default 0
+> index is a number, columns is a string, for both values, you can put it into a list for batch handling
