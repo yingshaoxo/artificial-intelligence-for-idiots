@@ -1,3 +1,9 @@
+```
+import numpy as np
+import pandas as pd
+```
+___
+
 #### First, let us get some intuition from it
 
 ```
