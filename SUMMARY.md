@@ -4,6 +4,7 @@
   * [What is Machine Learning](what-is-machine-learning.md)
 * [Data Manipulation](data-manipulation.md)
   * [Numpy](numpy.md)
+  * [Pandas](pandas.md)
 * [Data Visualization](data-visualization.md)
   * [Matplotlib](data-visualization/matplotlib.md)
     * [Simple line and point](data-visualization/matplotlib/simple-line-and-point.md)
