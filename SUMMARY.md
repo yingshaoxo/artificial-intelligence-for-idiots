@@ -11,4 +11,6 @@
     * [Any line and label](data-visualization/matplotlib/any-line-and-label.md)
     * [Annotation in reality](data-visualization/matplotlib/annotation-in-reality.md)
 * [Dataset Searching](dataset-searching.md)
+* [Keras](keras.md)
+  * [Data preparation](keras/data-preparation.md)
 
