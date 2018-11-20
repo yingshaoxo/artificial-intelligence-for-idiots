@@ -13,4 +13,5 @@
 * [Dataset Searching](dataset-searching.md)
 * [Keras](keras.md)
   * [Data preparation](keras/data-preparation.md)
+  * [Build the simplest model](keras/build-the-simplest-model.md)
 
