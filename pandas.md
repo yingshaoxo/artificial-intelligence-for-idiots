@@ -87,7 +87,6 @@ drop a column in the table
 1      1.5      3.0
 2      2.0      4.0
 3      2.5      5.0
->>> 
 ```
 
 Here the `axis` means: 
