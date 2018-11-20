@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
   * [What is Machine Learning](what-is-machine-learning.md)
-* Data Manipulation
+* [Data Manipulation](data-manipulation.md)
   * [Numpy](numpy.md)
 * [Data Visualization](data-visualization.md)
   * [Matplotlib](data-visualization/matplotlib.md)
