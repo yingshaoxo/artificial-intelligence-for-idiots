@@ -122,3 +122,18 @@ ___
 dtype: object
 >>> 
 ```
+
+___
+
+#### add a column to your table
+
+```
+>>> new_column = table.apply(lambda row: greater_than_2(row), axis=1)
+>>> table['new_column'] = new_column
+>>> table
+   column1  column2 new_column
+0      1.0      2.0         no
+1      1.5      3.0         no
+2      2.0      4.0         no
+3      2.5      5.0        yes
+```
