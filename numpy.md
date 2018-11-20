@@ -1,3 +1,8 @@
+Numpy is a short name for `number of python`
+
+`numpy` is a python library for number processing.
+___
+
 py_list to np_array
 `np.array(a_list)`
 
