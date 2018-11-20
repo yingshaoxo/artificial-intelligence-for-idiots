@@ -49,6 +49,28 @@ get one column of your pandas dataframe
 ```
 ___
 
+get two columns of your pandas dataframe
+
+```
+>>> data = {'column1': numpy_array, 'column2': numpy_array*2, 'another_column': numpy_array*3}
+>>> table = pd.DataFrame(data)
+>>> table
+   column1  column2  another_column
+0      1.0      2.0             3.0
+1      1.5      3.0             4.5
+2      2.0      4.0             6.0
+3      2.5      5.0             7.5
+
+>>> table[["column2", "another_column"]]
+   column2  another_column
+0      2.0             3.0
+1      3.0             4.5
+2      4.0             6.0
+3      5.0             7.5
+
+```
+___
+
 make some changes for that column
 
 ```
