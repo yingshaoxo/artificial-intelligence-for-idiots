@@ -1,3 +1,5 @@
+#### First in first
+
 `Pandas` is a Python tool for handling `tables`, which works like excel, but it's programmable.
 
 ```
@@ -5,7 +7,7 @@ import pandas as pd
 ```
 ___
 
-Create your first `DataFrame`
+#### Create your first `DataFrame`
 
 ```
 >>> numpy_array = np.arange(1,3, step=0.5)
@@ -18,7 +20,7 @@ Create your first `DataFrame`
 ```
 ___
 
-A general pandas `DataFrame`
+#### A general pandas `DataFrame`
 
 ```
 >>> data = {'column1': numpy_array, 'column2': numpy_array*2}
@@ -31,7 +33,7 @@ A general pandas `DataFrame`
 ```
 ___
 
-get one column of your pandas dataframe
+#### get one column from your pandas dataframe
 
 ```
 >>> table = pd.DataFrame(data)
@@ -49,7 +51,7 @@ get one column of your pandas dataframe
 ```
 ___
 
-get two columns of your pandas dataframe
+#### get two columns from your pandas dataframe
 
 ```
 >>> data = {'column1': numpy_array, 'column2': numpy_array*2, 'another_column': numpy_array*3}
@@ -71,7 +73,7 @@ get two columns of your pandas dataframe
 ```
 ___
 
-drop a column in the table
+#### drop a column in your table
 
 ```
 >>> table
@@ -92,3 +94,7 @@ drop a column in the table
 Here the `axis` means: 
 > {0 or ‘index’, 1 or ‘columns’}, default 0
 > index is a number, columns is a string, for both values, you can put it into a list for batch handling
+
+___
+
+
