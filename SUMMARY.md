@@ -15,5 +15,5 @@
   * [Data preparation](keras/data-preparation.md)
   * [Build the simplest model](keras/build-the-simplest-model.md)
 * [Robot](robot.md)
-* [Speech to Text](speech-to-text.md)
+  * [Speech to Text](robot/speech-to-text.md)
 
