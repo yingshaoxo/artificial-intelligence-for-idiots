@@ -34,3 +34,7 @@ while 1:
         text = get_text(audio_data)
         print(f"\n{text}")
 ```
+
+### links may helpful
+
+https://realpython.com/python-speech-recognition/
