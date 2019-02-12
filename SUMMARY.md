@@ -2,6 +2,8 @@
 
 * [Introduction](README.md)
   * [What is Machine Learning](what-is-machine-learning.md)
+* [Python Basics](python-basics.md)
+  * [Random Number](python-basics/random-number.md)
 * [Data Manipulation](data-manipulation.md)
   * [Numpy](numpy.md)
   * [Pandas](pandas.md)
