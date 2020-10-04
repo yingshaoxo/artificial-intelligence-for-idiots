@@ -168,3 +168,18 @@ Index: []
 table.to_excel("hello.xlsx")
 ```
 
+## read your excel table
+
+```python
+table = pd.read_excel('hello.xlsx', index_col=0)  
+```
+
+## get one column as a NumPy array
+
+```python
+>>> df = pd.DataFrame({"A":[1, 2], "B":[3, 4], "C":[5, 6]})
+>>> df[["A"]].to_numpy()
+array([[1],
+       [2]], dtype=int64)
+```
+
