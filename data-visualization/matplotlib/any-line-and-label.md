@@ -1,4 +1,6 @@
-```
+# Any line and label
+
+```text
 import pylab
 import numpy as np
 
@@ -22,7 +24,7 @@ pylab.plot(-0.2, -1/25, 'ro', label = r'$y^\prime(-\frac{1}{2}) = -\frac{1}{25}$
 
 pylab.legend(loc='lower right')
 pylab.show()
-
 ```
 
-![](/assets/negative_x^2.png)
+![](../../.gitbook/assets/negative_x^2.png)
+

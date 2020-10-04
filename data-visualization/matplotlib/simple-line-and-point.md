@@ -1,4 +1,6 @@
-```
+# Simple line and point
+
+```text
 import pylab
 import numpy as np
 
@@ -13,7 +15,5 @@ pylab.plot(2, 4, 'bo')
 pylab.show()
 ```
 
-![](/assets/x^2.png)
-
-___
+![](../../.gitbook/assets/x^2.png)
 

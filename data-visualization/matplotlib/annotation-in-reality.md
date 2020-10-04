@@ -1,6 +1,8 @@
-### Simple one
+# Annotation in reality
 
-```
+## Simple one
+
+```text
 import numpy as np
 import pylab
 
@@ -13,13 +15,11 @@ pylab.annotate('a point', xy=(0, 0), xytext=(1, 0), arrowprops=dict(facecolor='b
 pylab.show()
 ```
 
-![](/assets/annotation.png)
+![](../../.gitbook/assets/annotation.png)
 
-___
+## Complex one
 
-### Complex one
-
-```
+```text
 import numpy as np
 import pylab
 
@@ -53,4 +53,5 @@ pylab.xlim(-8, 14)
 pylab.show()
 ```
 
-![](/assets/annotation_for_real.png)
+![](../../.gitbook/assets/annotation_for_real.png)
+

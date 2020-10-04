@@ -1,20 +1,22 @@
-### Installation
+# Speech to Text
 
-```
+## Installation
+
+```text
 sudo apt-get install python-pyaudio python3-pyaudio
 
 sudo pip3 install speechrecognition
 ```
 
-### Give it a try
+## Give it a try
 
-```
+```text
 python3 -m speech_recognition
 ```
 
-### Let's go
+## Let's go
 
-```
+```text
 import speech_recognition as sr
 
 r = sr.Recognizer()
@@ -35,6 +37,7 @@ while 1:
         print(f"\n{text}")
 ```
 
-### links may helpful
+## links may helpful
 
-https://realpython.com/python-speech-recognition/
+[https://realpython.com/python-speech-recognition/](https://realpython.com/python-speech-recognition/)
+

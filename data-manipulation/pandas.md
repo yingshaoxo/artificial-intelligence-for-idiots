@@ -1,15 +1,16 @@
-#### First in first
+# Pandas
+
+## First in first
 
 `Pandas` is a Python tool for handling `tables`, which works like excel, but it's programmable.
 
-```
+```text
 import pandas as pd
 ```
-___
 
-#### Create your first `DataFrame`
+## Create your first `DataFrame`
 
-```
+```text
 >>> numpy_array = np.arange(1,3, step=0.5)
 >>> pd.DataFrame(numpy_array)
      0
@@ -18,11 +19,10 @@ ___
 2  2.0
 3  2.5
 ```
-___
 
-#### A general pandas `DataFrame`
+## A general pandas `DataFrame`
 
-```
+```text
 >>> data = {'column1': numpy_array, 'column2': numpy_array*2}
 >>> pd.DataFrame(data)
    column1  column2
@@ -31,11 +31,10 @@ ___
 2      2.0      4.0
 3      2.5      5.0
 ```
-___
 
-#### get one column from your pandas dataframe
+## get one column from your pandas dataframe
 
-```
+```text
 >>> table = pd.DataFrame(data)
 >>> table
    column1  column2
@@ -49,11 +48,10 @@ ___
 2    2.0
 3    2.5
 ```
-___
 
-#### get two columns from your pandas dataframe
+## get two columns from your pandas dataframe
 
-```
+```text
 >>> data = {'column1': numpy_array, 'column2': numpy_array*2, 'another_column': numpy_array*3}
 >>> table = pd.DataFrame(data)
 >>> table
@@ -69,13 +67,11 @@ ___
 1      3.0             4.5
 2      4.0             6.0
 3      5.0             7.5
-
 ```
-___
 
-#### drop a column in your table
+## drop a column in your table
 
-```
+```text
 >>> table
    column1  column2  another_column
 0      1.0      2.0             3.0
@@ -91,15 +87,13 @@ ___
 3      2.5      5.0
 ```
 
-Here the `axis` means: 
-> {0 or ‘index’, 1 or ‘columns’}, default 0
-> index is a number, columns is a string, for both values, you can put it into a list for batch handling
+Here the `axis` means:
 
-___
+> {0 or ‘index’, 1 or ‘columns’}, default 0 index is a number, columns is a string, for both values, you can put it into a list for batch handling
 
-#### get a new column based on other exists columns
+## get a new column based on other exists columns
 
-```
+```text
 >>> table = table.drop("another_column", axis=1)
 >>> table
    column1  column2
@@ -120,14 +114,12 @@ ___
 2     no
 3    yes
 dtype: object
->>> 
+>>>
 ```
 
-___
+## add a column to your table
 
-#### add a column to your table
-
-```
+```text
 >>> new_column = table.apply(lambda row: greater_than_2(row), axis=1)
 >>> table['new_column'] = new_column
 >>> table
@@ -137,3 +129,42 @@ ___
 2      2.0      4.0         no
 3      2.5      5.0        yes
 ```
+
+## create an empty table with head titles
+
+```python
+>>> table = pd.DataFrame(columns=["name", "age"])
+>>> table
+Empty DataFrame
+Columns: [name, age]
+Index: []
+```
+
+## add a row to that table with a dict
+
+```python
+>>> new_row = {'name':'yingshaoxo', 'age':22}
+>>> table = table.append(new_row, ignore_index=True)
+>>> table
+         name age
+0  yingshaoxo  22
+```
+
+## add a row to that table with a list
+
+```python
+>>> new_row = ["yingshaoxo", 22]
+>>> a_series = pd.Series(new_row, index=table.columns)
+>>> table = table.append(a_series, ignore_index=True)
+>>> table
+         name age
+0  yingshaoxo  22
+1  yingshaoxo  22
+```
+
+## export your table as an excel file
+
+```python
+table.to_excel("hello.xlsx")
+```
+

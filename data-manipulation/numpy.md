@@ -1,22 +1,20 @@
+# Numpy
+
 `Numpy` is a short name of `number of python`
 
 > `numpy` is a python library for number processing.
 
-
-```
+```text
 import numpy as np
 ```
-___
 
-py_list to np_array
-`np.array(a_list)`
+py\_list to np\_array `np.array(a_list)`
 
-np_array to py_list
-`np_array.tolist()`
-___
+np\_array to py\_list `np_array.tolist()`
 
 creat a numpy array
-```
+
+```text
 >>> np.arange(3)
 array([0, 1, 2])
 >>> np.arange(3, step=0.1)
@@ -26,26 +24,27 @@ array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1. , 1.1, 1.2,
 >>> np.arange(1,3, step=0.5)
 array([1. , 1.5, 2. , 2.5])
 ```
-___
 
-use np_array as list
-```
+use np\_array as list
+
+```text
 for i in np_array:
    print(i)
 ```
-___
 
-get np_array index by value
-```
+get np\_array index by value
+
+```text
 index_list = np.where(np_array == some_value)[0]
 print(index_list)
 ```
 
-get np_array values  by index_list
-```
+get np\_array values by index\_list
+
+```text
 value_list = np_array[index_list]
 print(value_list)
 ```
-___
 
-Just remember, any list you put in numpy function, it will automatically converted to np_array.
+Just remember, any list you put in numpy function, it will automatically converted to np\_array.
+

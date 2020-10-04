@@ -1,12 +1,13 @@
-```
+# Data preparation
+
+```text
 import numpy as np
 import pandas as pd
 ```
-___
 
-#### First, let us get some intuition from it
+## First, let us get some intuition from it
 
-```
+```text
 >>> data_table = pd.read_csv("/home/yingshaoxo/500_Person_Gender_Height_Weight_Index.csv")
 
 >>> data_table.head()
@@ -17,11 +18,10 @@ ___
 3  Female     195     104      3
 4    Male     149      61      3
 ```
-___
 
-#### For our case, we only need the `height and weight` as `input`, `gender` as `output`
+## For our case, we only need the `height and weight` as `input`, `gender` as `output`
 
-```
+```text
 >>> x = data_table[['Height', 'Weight']].values
 >>> x[:10]
 array([[174,  96],
@@ -36,7 +36,7 @@ array([[174,  96],
        [169, 103]])
 ```
 
-```
+```text
 >>> def convert_gender_to_number(row):
 ...     if row['Gender'] == 'Male':
 ...         return 1
@@ -56,3 +56,4 @@ array([[174,  96],
 8    1
 9    0
 ```
+
